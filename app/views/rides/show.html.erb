@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Rider:</b>
+  <%= @ride.rider_id %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @ride.date %>
+</p>
+
+<p>
+  <b>Driver:</b>
+  <%= @ride.driver_id %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @ride.rating %>
+</p>
+
+<p>
+  <b>Pickup:</b>
+  <%= @ride.pickup %>
+</p>
+
+<p>
+  <b>Dropoff:</b>
+  <%= @ride.dropoff %>
+</p>
+
+<p>
+  <b>Fare:</b>
+  <%= @ride.fare %>
+</p>
+
+<p>
+  <b>Distance:</b>
+  <%= @ride.distance %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @ride.duration %>
+</p>
+
+<p>
+  <b>Average speed:</b>
+  <%= @ride.average_speed %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @ride.title %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @ride.image_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_ride_path(@ride) %> |
+<%= link_to 'Back', rides_path %>

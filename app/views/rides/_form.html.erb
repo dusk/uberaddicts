@@ -1,0 +1,65 @@
+<%= form_for(@ride) do |f| %>
+  <% if @ride.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ride.errors.count, "error") %> prohibited this ride from being saved:</h2>
+
+      <ul>
+      <% @ride.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :rider_id %><br />
+    <%= f.text_field :rider_id %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :driver_id %><br />
+    <%= f.text_field :driver_id %>
+  </div>
+  <div class="field">
+    <%= f.label :rating %><br />
+    <%= f.text_field :rating %>
+  </div>
+  <div class="field">
+    <%= f.label :pickup %><br />
+    <%= f.text_field :pickup %>
+  </div>
+  <div class="field">
+    <%= f.label :dropoff %><br />
+    <%= f.text_field :dropoff %>
+  </div>
+  <div class="field">
+    <%= f.label :fare %><br />
+    <%= f.text_field :fare %>
+  </div>
+  <div class="field">
+    <%= f.label :distance %><br />
+    <%= f.text_field :distance %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br />
+    <%= f.text_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :average_speed %><br />
+    <%= f.text_field :average_speed %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :image_id %><br />
+    <%= f.text_field :image_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

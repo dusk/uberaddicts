@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rider_id: 
+  date: 2012-05-04 17:34:21
+  driver_id: 
+  rating: 
+  pickup: MyString
+  dropoff: MyString
+  fare: 
+  distance: 1.5
+  duration: 1.5
+  average_speed: 
+  title: MyString
+  image_id: 
+
+two:
+  rider_id: 
+  date: 2012-05-04 17:34:21
+  driver_id: 
+  rating: 
+  pickup: MyString
+  dropoff: MyString
+  fare: 
+  distance: 1.5
+  duration: 1.5
+  average_speed: 
+  title: MyString
+  image_id: 
